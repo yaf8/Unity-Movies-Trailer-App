@@ -143,7 +143,7 @@ h1 {
 .searchMovie {
   display: flex;
   float: right;
-  max-width: 40%;
+  width: 60%;
   border: 1px solid darkslategray;
   outline: transparent;
   background-color: transparent;
@@ -152,7 +152,10 @@ h1 {
   font-size: 16px;
   border-radius: 25px;
   color: white;
-
+  transition: width .3s;
+}
+.searchMovie:hover{
+  width: 110%;
 }
 
 
@@ -167,7 +170,7 @@ h1 {
   cursor: pointer;
 }
 
-.loginButton{
+.navButton{
   float: right;
   padding: 10px 20px 10px 20px;
   margin-right: 10px;
@@ -178,7 +181,19 @@ h1 {
   font-size: 14px;
   text-transform: capitalize;
   border-radius: 20px;
-    margin-top: 10px;background: linear-gradient(
+  margin-top: 10px;
+  background: linear-gradient(
+      30deg,
+      rgb(38, 32, 141) 0%,
+      rgba(158, 4, 247, 0.3) 80%
+  );
+  transition: padding .5s;
+}
+
+.navButton:hover{
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(
       30deg,
       rgb(38, 32, 141) 0%,
       rgba(158, 4, 247, 0.3) 80%

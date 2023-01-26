@@ -12,6 +12,7 @@
 
 .inputV {
     flex-direction: column;
+    font-weight: bold;
     padding: 10px 15px 10px 15px;
     background: linear-gradient(
         30deg,
@@ -26,8 +27,9 @@
 }
 
 .buttonIN{
+    padding: 15px;
     font-size: 16px;
-    width: 98%;
+    width: 100%;
     border-radius: 25px;
     color: white;
     border-color: rgb(29, 4, 51);
@@ -37,10 +39,11 @@
         rgb(4, 7, 96),
         rgb(104, 6, 139)
     );
-    transition: width .2s;
+    transition: padding .1s;
 }
 
 .buttonIN:hover{
+    padding: 17px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(47, 6, 84);
@@ -58,12 +61,65 @@ h3{
     width: 400px;
 }
 
-.currentUser{
-    margin-left: 30px;
+.user{
+    float: left;
+    width: 400px;
+    flex-direction: column;
+    margin-top: 10px;
     align-items: center;
     display: flex;
-    padding: 10px;
+    background: repeating-linear-gradient(
+        30deg,
+        rgb(8, 114, 208),
+        rgb(0, 108, 88)
+    );
+    border-radius: 25px;
+    padding: 30px;
+    font-size: large;
+    border: solid 2px;
     float: left;
     background-color: transparent;
-    color: wheat;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+.btnSignOut{
+    padding: 16px;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 25px;
+    color: white;
+    border-color: rgb(29, 4, 51);
+    margin: 10px;
+    font-weight: bold;
+    background: linear-gradient(
+        30deg,
+        rgba(10, 56, 207, 0.5),
+        rgb(255, 0, 0, .5)
+    );
+    transition: width .2s;
+}
+
+.btnSignOut:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 6, 84);
+    width: 45%;
+    font-weight: initial;
+    background: linear-gradient(
+        30deg,
+        rgb(254, 7, 7),
+        rgb(157, 1, 1)
+    );
+}
+
+.userName{
+    font-weight: bold;
+    font-size: 20px;
+}
+.email{
+    font-size: 21px;
+    padding-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: coral;
 }
