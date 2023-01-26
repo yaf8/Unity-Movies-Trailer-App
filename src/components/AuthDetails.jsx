@@ -2,7 +2,6 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { auth } from "../firebase";
 
-
 const AuthDetails = () => {
   const [authUser, setAuthUser] = useState(null);
   
@@ -22,9 +21,6 @@ const AuthDetails = () => {
     };
   }, []);
 
-
-
-
   const userSignOut = () => {
    signOut(auth)
       .then(() => {
@@ -38,8 +34,6 @@ const AuthDetails = () => {
   return (
     <div className="user">
       
-      
-
       {authUser ? (
         <>
           <p className="userName">Sign in as  <span className="email">{`${authUser.email}`}</span></p>

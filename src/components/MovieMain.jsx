@@ -17,8 +17,6 @@ function MovieMain() {
     const [searchKey, setSearchKey] = useState("")
     const [movie, setMovie] = useState({title: "Loading Movies"})
 
-    
-
     useEffect(() => {
         fetchMovies()
     }, [])

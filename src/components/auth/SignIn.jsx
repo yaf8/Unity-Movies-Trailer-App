@@ -25,11 +25,6 @@ const SignIn = () => {
   };
 
   return (
-    <>
-      
-    
-
-
     
     <div className="Login_Form">
       
@@ -69,8 +64,6 @@ const SignIn = () => {
 
 
     </div>
-    
-    </>
   );
 };
 
