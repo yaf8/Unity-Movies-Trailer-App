@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 
 const AuthDetails = () => {
   const [authUser, setAuthUser] = useState(null);
-  
+
   const CurrentUser = "";
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const AuthDetails = () => {
   }, []);
 
   const userSignOut = () => {
-   signOut(auth)
+    signOut(auth)
       .then(() => {
         console.log("sign out successful");
       }).catch((error) => {
@@ -33,12 +33,12 @@ const AuthDetails = () => {
 
   return (
     <div className="user">
-      
+
       {authUser ? (
         <>
           <p className="userName">Sign in as  <span className="email">{`${authUser.email}`}</span></p>
-         <button className="btnSignOut" onClick={userSignOut}>Sign Out</button>
-    </>
+          <button className="btnSignOut" onClick={userSignOut}>Sign Out</button>
+        </>
       ) : (
         <p>Signed Out</p>
       )}

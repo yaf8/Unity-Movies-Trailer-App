@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react"
+import { useEffect, useState } from "react"
 import '../App.css'
 import axios from 'axios'
 import Movie from "./Movie"
@@ -15,7 +15,7 @@ function MovieMain() {
     const [trailer, setTrailer] = useState(null)
     const [movies, setMovies] = useState([])
     const [searchKey, setSearchKey] = useState("")
-    const [movie, setMovie] = useState({title: "Loading Movies"})
+    const [movie, setMovie] = useState({ title: "Loading Movies" })
 
     useEffect(() => {
         fetchMovies()
@@ -26,7 +26,7 @@ function MovieMain() {
             event.preventDefault()
         }
 
-        const {data} = await axios.get(`${searchKey ? SEARCH_API : DISCOVER_API}`, {
+        const { data } = await axios.get(`${searchKey ? SEARCH_API : DISCOVER_API}`, {
             params: {
                 api_key: API_KEY,
                 query: searchKey
@@ -43,7 +43,7 @@ function MovieMain() {
     }
 
     const fetchMovie = async (id) => {
-        const {data} = await axios.get(`${MOVIE_API}movie/${id}`, {
+        const { data } = await axios.get(`${MOVIE_API}movie/${id}`, {
             params: {
                 api_key: API_KEY,
                 append_to_response: "videos"
@@ -81,7 +81,7 @@ function MovieMain() {
             <header className="center-max-size header">
                 <form className="form" onSubmit={fetchMovies} >
                     <input className="searchMovie" type="text" id="search" placeholder="search"
-                           onInput={(event) => setSearchKey(event.target.value)}/>
+                        onInput={(event) => setSearchKey(event.target.value)} />
                     <button className="submit-search" type="submit"><i className="fa fa-search"></i></button>
                 </form>
             </header>
@@ -89,7 +89,7 @@ function MovieMain() {
                 <main>
                     {movie ?
                         <div className="poster"
-                             style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})`}}>
+                            style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(${BACKDROP_PATH}${movie.backdrop_path})` }}>
                             {playing ?
                                 <>
                                     <Youtube
@@ -120,7 +120,7 @@ function MovieMain() {
                                     <div className="poster-content">
                                         {trailer ?
                                             <button className={"button play-video"} onClick={() => setPlaying(true)}
-                                                    type="button">Play
+                                                type="button">Play
                                                 Trailer</button>
                                             : 'Sorry, no trailer available'}
                                         <h1>{movie.title}</h1>

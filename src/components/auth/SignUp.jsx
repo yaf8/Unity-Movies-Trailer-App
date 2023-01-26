@@ -22,14 +22,14 @@ const SignUp = () => {
       <form onSubmit={signUp}>
         <h3>Create Account</h3>
         <input
-        className="inputV"
+          className="inputV"
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
         <input
-        className="inputV"
+          className="inputV"
           type="password"
           placeholder="Enter your password"
           value={password}

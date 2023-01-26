@@ -1,24 +1,22 @@
-.Login_Form{
+.Login_Form {
     background-color: transparent;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .inputV {
     flex-direction: column;
     font-weight: bold;
     padding: 10px 15px 10px 15px;
-    background: linear-gradient(
-        30deg,
-        rgb(119, 206, 244),
-        rgb(236, 202, 248)
-    );
+    background: linear-gradient(30deg,
+            rgb(119, 206, 244),
+            rgb(236, 202, 248));
     margin: 5px;
     border-radius: 8px;
     width: 100%;
@@ -26,7 +24,7 @@
     display: flex;
 }
 
-.buttonIN{
+.buttonIN {
     padding: 15px;
     font-size: 16px;
     width: 100%;
@@ -34,45 +32,39 @@
     color: white;
     border-color: rgb(29, 4, 51);
     margin: 10px;
-    background: linear-gradient(
-        30deg,
-        rgb(4, 7, 96),
-        rgb(104, 6, 139)
-    );
+    background: linear-gradient(30deg,
+            rgb(4, 7, 96),
+            rgb(104, 6, 139));
     transition: padding .1s;
 }
 
-.buttonIN:hover{
+.buttonIN:hover {
     padding: 17px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(47, 6, 84);
     width: 100%;
-    background: linear-gradient(
-        30deg,
-        rgb(6, 10, 121),
-        rgb(130, 8, 174)
-    );
+    background: linear-gradient(30deg,
+            rgb(6, 10, 121),
+            rgb(130, 8, 174));
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     width: 400px;
 }
 
-.user{
+.user {
     float: left;
     width: 400px;
     flex-direction: column;
     margin-top: 10px;
     align-items: center;
     display: flex;
-    background: repeating-linear-gradient(
-        30deg,
-        rgb(8, 114, 208),
-        rgb(0, 108, 88)
-    );
+    background: repeating-linear-gradient(30deg,
+            rgb(8, 114, 208),
+            rgb(0, 108, 88));
     border-radius: 25px;
     padding: 30px;
     font-size: large;
@@ -83,7 +75,7 @@ h3{
     margin-bottom: 50px;
 }
 
-.btnSignOut{
+.btnSignOut {
     padding: 16px;
     font-size: 16px;
     width: 50%;
@@ -92,32 +84,29 @@ h3{
     border-color: rgb(29, 4, 51);
     margin: 10px;
     font-weight: bold;
-    background: linear-gradient(
-        30deg,
-        rgba(10, 56, 207, 0.5),
-        rgb(255, 0, 0, .5)
-    );
+    background: linear-gradient(30deg,
+            rgba(10, 56, 207, 0.5),
+            rgb(255, 0, 0, .5));
     transition: width .2s;
 }
 
-.btnSignOut:hover{
+.btnSignOut:hover {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(47, 6, 84);
     width: 45%;
     font-weight: initial;
-    background: linear-gradient(
-        30deg,
-        rgb(254, 7, 7),
-        rgb(157, 1, 1)
-    );
+    background: linear-gradient(30deg,
+            rgb(254, 7, 7),
+            rgb(157, 1, 1));
 }
 
-.userName{
+.userName {
     font-weight: bold;
     font-size: 20px;
 }
-.email{
+
+.email {
     font-size: 21px;
     padding-left: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

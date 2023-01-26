@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-roboto);
   background-color: hsl(228, 22%, 5%);
@@ -67,7 +68,7 @@ h1 {
 }
 
 .button:hover {
-  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .close-video {
@@ -77,7 +78,7 @@ h1 {
   left: 10px;
 }
 
-.youtube{
+.youtube {
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
@@ -154,7 +155,8 @@ h1 {
   color: white;
   transition: width .3s;
 }
-.searchMovie:hover{
+
+.searchMovie:hover {
   width: 110%;
 }
 
@@ -165,12 +167,12 @@ h1 {
   right: 5px;
   top: 5px;
   background-color: transparent;
-  color:  white;
+  color: white;
   border: none;
   cursor: pointer;
 }
 
-.navButton{
+.navButton {
   float: right;
   padding: 10px 20px 10px 20px;
   margin-right: 10px;
@@ -182,25 +184,21 @@ h1 {
   text-transform: capitalize;
   border-radius: 20px;
   margin-top: 10px;
-  background: linear-gradient(
-      30deg,
+  background: linear-gradient(30deg,
       rgb(38, 32, 141) 0%,
-      rgba(158, 4, 247, 0.3) 80%
-  );
+      rgba(158, 4, 247, 0.3) 80%);
   transition: padding .5s;
 }
 
-.navButton:hover{
+.navButton:hover {
   padding-left: 30px;
   padding-right: 30px;
-  background: linear-gradient(
-      30deg,
+  background: linear-gradient(30deg,
       rgb(38, 32, 141) 0%,
-      rgba(158, 4, 247, 0.3) 80%
-  );
+      rgba(158, 4, 247, 0.3) 80%);
 }
 
-.profilePic{
+.profilePic {
   float: left;
   padding: 10px 20px 10px 20px;
   margin-right: 10px;
@@ -211,11 +209,10 @@ h1 {
   font-size: 14px;
   text-transform: capitalize;
   border-radius: 20px;
-  margin-top: 10px;background: linear-gradient(
-      30deg,
+  margin-top: 10px;
+  background: linear-gradient(30deg,
       rgb(38, 32, 141) 0%,
-      rgba(158, 4, 247, 0.3) 80%
-  );
+      rgba(158, 4, 247, 0.3) 80%);
 }
 
 .brand {
@@ -234,14 +231,12 @@ h1 {
   align-items: center;
   justify-content: center;
   color: rgb(255, 168, 7);
-  background: linear-gradient(
-      30deg,
+  background: linear-gradient(30deg,
       rgb(3, 1, 41) 0%,
-      rgba(36, 1, 55, 0.1) 100%
-  );
+      rgba(36, 1, 55, 0.1) 100%);
 }
 
-.navHead{
+.navHead {
   display: block;
   float: left;
 }

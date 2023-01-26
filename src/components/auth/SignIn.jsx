@@ -25,22 +25,22 @@ const SignIn = () => {
   };
 
   return (
-    
+
     <div className="Login_Form">
-      
+
       <div className="sign-in-container">
         <form onSubmit={signIn}>
           <h3>Log In to your Account</h3>
 
           <input
-          className="inputV"
+            className="inputV"
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></input>
           <input
-          className="inputV"
+            className="inputV"
             type="password"
             placeholder="Enter your password"
             value={password}
@@ -53,14 +53,14 @@ const SignIn = () => {
 
       <div className="sign-up-container">
         <SignUp />
-        
+
       </div>
 
       <div className="user-container">
         <AuthDetails />
       </div>
-    
-  
+
+
 
 
     </div>
