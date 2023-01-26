@@ -247,21 +247,3 @@ h1 {
   display: block;
   float: left;
 }
-
-.movieButton{
-  float: right;
-  padding: 10px 20px 10px 20px;
-  margin-right: 10px;
-  z-index: 2;
-  color: white;
-  border: solid 1px;
-  text-align: center;
-  font-size: 14px;
-  text-transform: capitalize;
-  border-radius: 20px;
-  margin-top: 10px;background: linear-gradient(
-      30deg,
-      rgb(38, 32, 141) 0%,
-      rgba(158, 4, 247, 0.3) 80%
-  );
-}
