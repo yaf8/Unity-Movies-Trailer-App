@@ -10,4 +10,4 @@
 ##### 7. install  <b><i><code>npm install firebase</code></i></b> <br />
 
 
-### <p>To run the app <b><i><code>npm star</code>t</i></b></p>
+### <p>To run the app <b><i><code>npm start</code></i></b></p>
