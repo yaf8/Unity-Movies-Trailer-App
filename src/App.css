@@ -144,7 +144,7 @@ h1 {
 .searchMovie {
   display: flex;
   float: right;
-  width: 60%;
+  width: 100%;
   border: 1px solid darkslategray;
   outline: transparent;
   background-color: transparent;
@@ -157,7 +157,7 @@ h1 {
 }
 
 .searchMovie:hover {
-  width: 110%;
+  width: 120%;
 }
 
 
@@ -194,8 +194,8 @@ h1 {
   padding-left: 30px;
   padding-right: 30px;
   background: linear-gradient(30deg,
-      rgb(38, 32, 141) 0%,
-      rgba(158, 4, 247, 0.3) 80%);
+      rgb(63, 55, 228) 0%,
+      rgba(178, 62, 245, 0.3) 80%);
 }
 
 .profilePic {
