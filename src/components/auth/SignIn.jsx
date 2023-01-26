@@ -26,6 +26,10 @@ const SignIn = () => {
 
     <div className="Login_Form">
 
+      <div className="user-container">
+        <AuthDetails />
+      </div>
+
       <div className="sign-in-container">
         <form onSubmit={signIn}>
           <h3>Log In to your Account</h3>
@@ -52,10 +56,6 @@ const SignIn = () => {
       <div className="sign-up-container">
         <SignUp />
 
-      </div>
-
-      <div className="user-container">
-        <AuthDetails />
       </div>
 
 

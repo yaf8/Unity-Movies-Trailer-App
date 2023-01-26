@@ -15,8 +15,8 @@
     font-weight: bold;
     padding: 10px 15px 10px 15px;
     background: linear-gradient(30deg,
-            rgb(119, 206, 244),
-            rgb(236, 202, 248));
+            rgb(148, 216, 245),
+            rgb(238, 212, 248));
     margin: 5px;
     border-radius: 8px;
     width: 100%;
@@ -72,7 +72,6 @@ h3 {
     float: left;
     background-color: transparent;
     color: rgb(255, 255, 255);
-    margin-bottom: 50px;
 }
 
 .btnSignOut {
@@ -111,4 +110,12 @@ h3 {
     padding-left: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: coral;
+}
+
+.sign-in-container{
+    margin-bottom: 20px;
+}
+
+.sign-up-container{
+    margin-bottom: 50px;
 }
