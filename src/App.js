@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
 
         <span className={"brand"}>Unity Trailers App</span>
-        <Link to="/components/auth/signin"><button className='navButton'>Login</button></Link>
+        <Link to="/components/auth/signin"><button className='navButton'>Account</button></Link>
         <Link to="/components/MovieMain"><button className='navButton'>Movies</button></Link>
 
       </header>
