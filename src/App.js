@@ -10,7 +10,7 @@ function App() {
 
         <span className={"brand"}>Unity Trailers App</span>
         <Link to="/components/auth/signin"><button className='navButton'>Account</button></Link>
-        <Link to="/components/MovieMain"><button className='navButton'>Movies</button></Link>
+        <Link to="/"><button className='navButton'>Movies</button></Link>
 
       </header>
 
@@ -19,7 +19,7 @@ function App() {
         <div className="containerMain">
           <Routes>
             <Route path="/components/auth/signin" element={<SignIn />} />
-            <Route path="/components/MovieMain" element={<MovieMain />} />
+            <Route path="/" element={<MovieMain />} />
           </Routes>
 
         </div>
